@@ -20,7 +20,7 @@ fn main() -> Result<()> {
         digits.iter().take(1)
     );
     let mut sum = 0;
-    for (first, other) in digit_cycle.clone().zip(digit_cycle.skip(1)){
+    for (first, other) in digit_cycle.clone().zip(digit_cycle.skip(1)) {
         if first == other {
             sum += first;
         }
